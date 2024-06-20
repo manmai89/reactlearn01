@@ -13,6 +13,10 @@ class MyComponent extends Component {
         })
     }
 
+    handleClickButton = () => {
+        console.log("Hello");
+    }
+
     render() {
 
         // let myname = "Man Mai";
@@ -26,6 +30,12 @@ class MyComponent extends Component {
                 <div>
                     My youtube {this.state.channel}
                 </div>
+                <div className="third">
+                    <button onClick={(event) => { this.handleClickButton(event) }}>
+                        Click Me
+                    </button>
+                </div>
+
             </>
         );
     }
