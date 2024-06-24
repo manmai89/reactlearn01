@@ -8,6 +8,9 @@ class MyComponent extends Component {
     }
 
     handleOnChangeName = (event) => {
+
+        console.log(event.target.value, "////", event.target, "////\\\\", event);
+
         this.setState({
             name: event.target.value
         })
@@ -20,6 +23,7 @@ class MyComponent extends Component {
     render() {
 
         // let myname = "Man Mai";
+        console.log("Hàm render được gọi/ Biến state: ", this.state);
 
         return (
             <>
