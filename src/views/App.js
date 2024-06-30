@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.scss';
 import React from 'react';
+import ListToDo from './Todos/ListToDo';
 // import MyComponent from './Example/MyComponent';
 // import MyForm from './Example/MyForm';
-import SplitComponent from './Example/SplitComponent';
+// import SplitComponent from './Example/SplitComponent';
 
 
 
@@ -18,12 +19,12 @@ function App() {
 
 
         {/* <MyComponent /> */}
-
-
         {/* <MyForm /> */}
+        {/* <SplitComponent /> */}
+
+        <ListToDo />
 
 
-        <SplitComponent />
 
       </header>
     </div>

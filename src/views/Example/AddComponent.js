@@ -30,9 +30,7 @@ class AddComponent extends Component {
 
         console.log("Bien state: ", this.state);
         this.props.addNewJob(
-            {
-                id: Math.floor(Math.random() * 100), title: this.state.title, salary: this.state.salary
-            }
+            { id: Math.floor(Math.random() * 100), title: this.state.title, salary: this.state.salary }
         );
         this.setState(
             {
